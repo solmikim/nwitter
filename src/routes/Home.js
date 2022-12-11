@@ -1,4 +1,4 @@
 import React from 'react';
 
-const Home = () => <span>Home</span>;
-export default Home;
+const home = () => <span>Home</span>;
+export default home;
