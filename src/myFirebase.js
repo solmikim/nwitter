@@ -1,5 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth} from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
 
 // 환경 변수는 REACT_APP 이라고 prefix를 붙여야 작동됨.
 const firebaseConfig = {
@@ -14,3 +16,4 @@ const firebaseConfig = {
   // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const authService = getAuth();
+export const dbService = getFirestore();

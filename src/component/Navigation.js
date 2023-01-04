@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import Profile from '../routes/Profile';
+import Home from '../routes/Home';
 
 const Navigation = () => {
     return (
