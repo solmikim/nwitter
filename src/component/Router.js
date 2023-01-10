@@ -5,7 +5,7 @@ import Home from '../routes/Home';
 import Profile from '../routes/Profile';
 import Navigation from './Navigation';
  
-const AppRouter =  ({isLoggedIn}) => {
+const AppRouter =  ({isLoggedIn, userObject}) => {
 
     // fragment는 들어갈 태그들이 많은데 div, span .. 등 에 넣기 싫을 때 사용 
     return (
@@ -15,7 +15,7 @@ const AppRouter =  ({isLoggedIn}) => {
                 {isLoggedIn ?
                 (<> 
                     <Route exact path="/">
-                        <Home/>
+                        <Home userObject={userObject}/>
                     </Route>
                     <Route exact path="/Profile" >
                         <Profile/>
